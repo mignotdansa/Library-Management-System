@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student login</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+html {
+	background-image: linear-gradient() url(BOOK2.jpg);
+}
+.navbar {
+	background-color: grey;
+}
+input{
+	text-align: center;
+}
+.centered {
+	background-color: #adaab5;
+	opacity: .6;
+	color: white;
+	left: 50%;
+	padding: 50px 70px;
+	border-radius: 30px;
+}
+</style>
+<body >
+	<header>
+		<nav class="navbar">
+			<a href="feedback.html">ABOUT US</a>
+			<a href="homepage.html" >HOME</a>
+			<p style="margin-left: 10px;">ASTU LIBRARY MANAGEMENT SYSTEM</p>
+		</nav>
+	</header>
+	<div>
+		<div class="centered" style="text-align: center; font-size: 20px; margin-top: 10px;">
+			<h2>STUDENT LOGIN</h2>
+			<form action="stulogin", method="post">
+				<label for="userid">User ID &emsp;&emsp;</label>
+				<input style="border-radius: 50px; height: 30px; width: 200px;" type="text" name="userid" placeholder="User ID"><br><br><br>	
+				<label for="password">Password &emsp;&emsp;</label>
+				<input style="border-radius: 50px; height: 30px; width: 200px;" type="password" name="password" placeholder="Password"><br><br><br>
+				<button type="submit" value="login" style="height: 40px; width: 80px; font-size: 20px; border-radius: 10px; cursor: pointer;">Login</button>
+				<button type="reset" value="cancel" style="height: 40px; width: 80px; font-size: 20px; border-radius: 10px; cursor: pointer;">Cancel</button><br><br>
+				<a href="forgotpassword.html">Forgot password</a><br><br>
+
+			</form>
+		</div>
+	</div>
+	
+</body>
+</html>

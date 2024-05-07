@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search book</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+html {
+	background-image: url(booooooook.jpg);
+}
+.navbar {
+	background-color: grey;
+	position: sticky;
+}
+.centered {
+	background-color: #6f59ad;
+	opacity: .6;
+	color: white;
+	left: 50%;
+	padding: 40px 50px;
+	border-radius: 30px;
+}
+.left {
+	position: absolute;
+	background-color: #6f59ad;
+	opacity: .6;
+	color: white;
+	top: 45%;
+	left: 20%;
+	padding: 40px 50px;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+}
+.right {
+	position: absolute;
+	background-color: #6f59ad;
+	opacity: .6;
+	color: white;
+	top: 45%;
+	left: 80%;
+	padding: 40px 50px;
+	transform: translate(-50%, -50%);
+	border-radius: 30px;
+}
+</style>
+<body >
+	<header>
+		<nav class="navbar">
+			<a href="feedback.html">ABOUT US </a>
+			<a href="book.html">BOOKS</a>
+			<a href="homepage.html">HOME</a>
+			<p style="margin-left: 10px;">ASTU LIBRARY MANAGEMENT SYSTEM</p>
+		</nav>
+	</header>
+	<div>
+		<div class="centered" style="text-align: center; font-size: 20px; margin-top: 50px;">
+			<form action="searchtitle" method="post">
+				<h2>Search Book by Title</h2>
+				<label for="Title">Title&ensp;&ensp;</label>
+				<input style="border-radius: 50px; height: 30px; width: 200px;" type="text" name="Title"><br><br><br>	
+				<button type="submit" value="login" style="height: 40px; width: 200px; font-size: 20px;border-radius: 10px; cursor: pointer;">Search book</button>
+			</form>
+		</div>
+		<div class="left" style="text-align: center; font-size: 20px; margin-top: 50px;">
+			<form action="searchisbn" method="post">
+				<h2>Search Book by ISBN</h2>
+				<label for="ISBN">ISBN&ensp;&ensp;</label>
+				<input style="border-radius: 50px; height: 30px; width: 200px;" type="text" name="ISBN"><br><br><br>	
+				<button type="submit" value="login" style="height: 40px; width: 200px; font-size: 20px; border-radius: 10px; cursor: pointer;;">Search book</button>
+			</form>
+		</div>
+		<div class="right" style="text-align: center; font-size: 20px; margin-top: 50px;">
+			<form action="searchauthor" method="post">
+				<h2>Search Book By Author</h2>
+				<label for="Author">Author&ensp;&ensp;</label>
+				<input style="border-radius: 50px; height: 30px; width: 200px;" type="text" name="Author"><br><br><br>	
+				<button type="submit" value="login" style="height: 40px; width: 200px; font-size: 20px; border-radius: 10px; cursor: pointer;">Search book</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

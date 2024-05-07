@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Return book</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+html {
+	background-image: url(booooooook.jpg);
+}
+.navbar {
+	background-color: grey;
+	position: sticky;
+}
+.centered {
+	background-color: #6f59ad;
+	opacity: .6;
+	color: white;
+	left: 50%;
+	padding: 50px 70px;
+	border-radius: 30px;
+}
+</style>
+<body>
+	<header>
+		<nav class="navbar">
+			<a href="feedback.html">FEEDBACK</a>
+			<a href="bookuser.html">BOOKS</a>
+			<a href="homepage.html">HOME</a>
+			<p style="margin-left: 10px;">ASTU LIBRARY MANAGEMENT SYSTEM</p>
+		</nav>
+	</header>
+	<div>
+		<div class="centered" style="text-align: center; font-size: 20px; margin-top: 50px;">
+			<h2>Return Book</h2>
+			<form action="returnbook" method="post">
+				<label for="userid">Confirm User ID&emsp;&emsp;</label>
+				<input style="border-radius: 50px; height: 30px; width: 200px;" type="text" name="userid"><br><br><br>  
+				<label for="isbn">ISBN &emsp;&nbsp;&emsp;</label>
+				<input style="border-radius: 50px; height: 30px; width: 200px;" type="text" name="isbn"><br><br><br>
+				<button type="submit" value="login" style="height: 40px; width: 220px; font-size: 20px; border-radius: 10px;">Return book</button>
+				<button type="reset" value="reset" style="height: 40px; width: 220px; font-size: 20px; border-radius: 10px;">Cancel</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

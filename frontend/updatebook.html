@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update book</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+html {
+	background-image: url(booooooook.jpg);
+}
+.navbar {
+	background-color: grey;
+	position: sticky;	
+}
+.centered {
+	background-color: #6f59ad;
+	opacity: .6;
+	color: white;
+	left: 50%;
+	padding: 50px 70px;
+	border-radius: 30px;
+}
+</style>
+<body >
+	<header>
+		<nav class="navbar">
+			<a href="feedback.html">ABOUT US</a>
+			<a href="book.html">BOOKS</a>
+			<a href="homepage.html">HOME</a>
+			<p style="margin-left: 10px;">ASTU LIBRARY MANAGEMENT SYSTEM</p>
+		</nav>
+	</header>
+	<div>
+		<div class="centered" style="text-align: center; font-size: 20px; margin-top: 50px;">
+			<h2>Update Book</h2>
+			<form action="updatebook" method="post">
+				<label for="ISBN">ISBN&emsp;&emsp;</label>
+				<input style="border-radius: 50px; height: 30px; width: 200px;" type="text" name="ISBN"><br><br><br>	
+				<label for="Title">Title&emsp;&emsp;</label>
+				<input style="border-radius: 50px; height: 30px; width: 200px;" type="text" name="Title"><br><br><br>
+				<label for="Qty">Qty&emsp;&emsp;</label>
+				<input style="border-radius: 50px; height: 30px; width: 200px;" type="text" name="Qty"><br><br><br>
+				<button type="submit" value="submit" style="height: 40px; width: 200px; font-size: 20px; border-radius: 10px; cursor: pointer;">Update book</button>
+				<button type="reset" value="reset" style="height: 40px; width: 200px; font-size: 20px; border-radius: 10px; cursor: pointer;">Cancel</button>
+			</form>
+		</div>
+	</div>
+	
+</body>
+</html>
